@@ -43,7 +43,7 @@ BFS_Target = 5
 def BFS(graph, BFS_Start, BFS_Target):
     global BFSPath #extract ang BFSPath para magamit outside kang bfs function
     visited = set()
-    queue = deque([(BFS_Start, [BFS_Target])])
+    queue = deque([(BFS_Start, [BFS_Start])])
 
     while queue:
         node, path = queue.popleft()
