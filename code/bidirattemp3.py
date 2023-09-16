@@ -32,8 +32,10 @@ g1 = Graph(num_nodes, edges)
 graph = g1.get_adjacency_list() #reassign contents kang g1 into graph dictionary
 print("g1.data Adjacency List:\n(Node: [Neighbor Node, Neighbor Node, ...])")
 print(g1)
+print("\n")
 print("graph Adjacency List: \n(Node: [Neighbor Node, Neighbor Node, ...])")
 print(graph)
+print("\n") #ambalon nyo lamang lamang napangubra ko ja ang graph ja amo run ja ang tree graph, lantawa nyo tsura na sa jupiter notebook. amoja kaja itsura kang tree graph kung i convert tana sa code(dictionary)
 
 BFS_Start = 10
 BFS_Target = 5
@@ -56,6 +58,6 @@ def BFS(graph, BFS_Start, BFS_Target):
                     new_path = path + [child]
                     queue.append((child, new_path))
 
-print("BFS Shortest Path:")
 BFS(graph, BFS_Start, BFS_Target)
+print("\n")
 print(BFSPath)
